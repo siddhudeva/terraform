@@ -9,3 +9,6 @@ output "new1" {
 }
 
 variable "new2" {}
+output "new2" {
+  value = var.new2
+}
