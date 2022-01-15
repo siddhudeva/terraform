@@ -72,3 +72,7 @@ output "Input2" {
   value = var.Input2
 }
 
+variable "Input3" {}
+output "Input3" {
+  value = var.Input3
+}
