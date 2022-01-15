@@ -42,21 +42,28 @@
 
 
 // varibles lists
-variable "new6" {
-  description = "This is the variable list"
-  default = ["abc", "hello_world", "1000"]
-}
-output "new6" {
-  value = var.new6[1]
-}
-variable "new7" {
-  description = "This is the list of variables maps"
-  default = {
-    name = "siddhu"
-    class = 10
-    male = true
-  }
-}
-output "new7" {
-  value = var.new7
+#variable "new6" {
+#  description = "This is the variable list"
+#  default = ["abc", "hello_world", "1000"]
+#}
+#output "new6" {
+#  value = var.new6[1]
+#}
+#variable "new7" {
+#  description = "This is the list of variables maps"
+#  default = {
+#    name = "siddhu"
+#    class = 10
+#    male = true
+#  }
+#}
+#output "new7" {
+#  value = var.new7
+#}
+//  variables from *.tfvars file
+variable "Input1"{}
+variable "Input2" {}
+
+output "Input1" {
+  value = var.Input1
 }
