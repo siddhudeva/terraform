@@ -52,7 +52,7 @@ output "new6" {
 variable "new7" {
   description = "This is the list of variables maps"
   default = {
-    name = siddhu
+    name = "siddhu"
     class = 10
     male = true
   }
