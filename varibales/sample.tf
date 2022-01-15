@@ -31,12 +31,12 @@ variable "new5" {
   type = number
 }
 output "new3" {
-  value = "var.new3"
+  value = var.new3
 }
 output "new4" {
-  value = "var.new5"
+  value = var.new5
 }
 output "new5" {
-  value = "var.new4"
+  value = var.new4
 }
 
