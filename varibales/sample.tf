@@ -49,3 +49,14 @@ variable "new6" {
 output "new6" {
   value = var.new6[1]
 }
+variable "new7" {
+  description = "This is the list of variables maps"
+  default = {
+    name = siddhu
+    class = 10
+    male = true
+  }
+}
+output "new7" {
+  value = var.new7
+}
