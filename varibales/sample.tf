@@ -21,8 +21,8 @@ variable "new3" {
 
 variable "new4" {
   description = "This is for specifying the boolean"
-  default = abc
-  type = true
+  default = true
+  type = bool
 }
 
 variable "new5" {
