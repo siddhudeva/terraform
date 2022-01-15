@@ -30,6 +30,13 @@ variable "new5" {
   default = 2300
   type = number
 }
-output "newfiles" {
-  value = "var.new3 new4 new5"
+output "new3" {
+  value = "var.new3"
 }
+output "new4" {
+  value = "var.new5"
+}
+output "new5" {
+  value = "var.new4"
+}
+
