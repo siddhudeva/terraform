@@ -47,5 +47,5 @@ variable "new6" {
   default = ["abc", "hello_world", "1000"]
 }
 output "new6" {
-  value = var.new6[0]
+  value = var.new6[1]
 }
