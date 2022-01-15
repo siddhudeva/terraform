@@ -7,3 +7,5 @@ variable "new1" {
 output "new1" {
   value = var.new1
 }
+
+variable "new2" {}
