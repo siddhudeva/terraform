@@ -1,5 +1,5 @@
 resource "aws_instance" "terraform1" {
-  ami = "ami-0760b951ddb0c20c9"
+  ami = "ami-0d652ece237863287"
   instance_type = "t2.micro"
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
 }
