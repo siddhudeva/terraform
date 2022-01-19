@@ -1,9 +1,8 @@
-data "aws_vpcs" "default" {
-  tags = {
-    service = "default_vpc"
-  }
+data "aws_vpcs" "selected" {
+  default = ture
 }
 
 output "default" {
-  value = data.aws_vpcs.default.id
+  value = data.aws_vpcs.selected.id
+
 }
