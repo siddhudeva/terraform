@@ -1,8 +1,6 @@
-data "aws_vpc" "selected" {
+data "aws_vpc" "default" {
   default = true
 }
-
 output "vpc" {
-  value = data.aws_vpc.selected
-
+  value = data.aws_vpc.default
 }
