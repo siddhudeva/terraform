@@ -1,8 +1,8 @@
-data "aws_vpcs" "selected" {
-  default = ture
+data "aws_vpc" "selected" {
+  default = true
 }
 
 output "vpc" {
-  value = data.aws_vpcs.selected
+  value = data.aws_vpc.selected
 
 }
