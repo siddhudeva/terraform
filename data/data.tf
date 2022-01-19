@@ -4,6 +4,6 @@ data "aws_vpcs" "default" {
   }
 }
 
-output "foo" {
+output "default" {
   value = data.aws_vpcs.default.id
 }
