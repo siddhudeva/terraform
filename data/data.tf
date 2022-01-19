@@ -1,4 +1,9 @@
-data "aws_default_vpc" "default" {}
-output "aws_vpc_id" {
-  value = data.aws_default_vpc.default.id
+data "aws_vpcs" "default" {
+  tags = {
+    service = "default_vpc"
+  }
+}
+
+output "foo" {
+  value = data.aws_vpcs.default.id
 }
