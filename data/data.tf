@@ -1,4 +1,4 @@
-data "aws_vpc" "default_vpc" {}
+data "aws_default_vpc" "default" {}
 output "aws_vpc_id" {
-  value = data.aws_vpc.default_vpc.id
+  value = data.aws_default_vpc.default.id
 }
